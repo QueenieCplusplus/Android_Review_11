@@ -190,5 +190,9 @@ Room helps user to persist info even they closed app for several days.
     主鍵與索引鍵
 
    https://blog.niclin.tw/2018/06/09/sql-基本觀念-primary-key-/-index-/-unique-差別/
+   
+8. android's tip (MVC)
+
+    https://developer.android.com/jetpack/guide
 
 
