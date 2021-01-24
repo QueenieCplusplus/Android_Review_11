@@ -1,6 +1,10 @@
 # Android_Review_11
 DB model, Room and Repo for App
 
+系統中模組之間的關係僅能為 V-C-M 。
+
+             ui.xml acts as UI View ------ UI.kt acts as Controller ------ViewModel.kt acts as Model
+
 Repository acts as a mediators for different data souces from following data soreces such as (1) + (2)
 
 Room helps user to persist info even they closed app for several days.
