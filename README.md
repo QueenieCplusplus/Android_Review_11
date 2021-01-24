@@ -5,10 +5,11 @@ Repository acts as a mediators for different data souces from following data sor
 
     (1) Retrofit, a web service. see Android_Review_10      (2) Room, a persistent data models
     
-                          List<Video>        ---------------------      List<DBVideo>
+    
+                          List<Video>  ----    List<DBVideo>   ----  VideosDB --- Room
     
     
-                                    List<DBVideo>.asDomainModel(): List<Video>
+                               List<DBVideo>.asDomainModel(): List<Video>
     
   
                              |                                          |
@@ -156,7 +157,9 @@ Repository acts as a mediators for different data souces from following data sor
        }
        
 
-6. to create a persistent DB model using Room.
+6. to create a persistent DB model using Room. R/W from DBVideo to VideosDB.
+
+       // TODO
 
        // go to app/src/main/java/..../katesvideoapp/db/Room.kt 持續性資料庫
        
