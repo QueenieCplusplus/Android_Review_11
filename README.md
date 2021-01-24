@@ -116,6 +116,8 @@ Repository acts as a mediators for different data souces from following data sor
 
        // go to app/src/main/java/..../katesvideoapp/db/DBEntities.kt 資料實體模組
        
+       package com.example.android.devbyteviewer.db
+       
        import androidx.room.Entity
        import androidx.room.PrimaryKey
        import (3) module 
@@ -153,10 +155,25 @@ Repository acts as a mediators for different data souces from following data sor
        
        }
        
+
+6. to create a persistent DB model using Room.
+
+       // go to app/src/main/java/..../katesvideoapp/db/Room.kt 持續性資料庫
+       
+       package com.example.android.devbyteviewer.db
+       
+       import androidx.room.*
+       
+       [modules matters with Livedata]
+       
+       [context related module]
+       
+       // TODO
+       // see Android_Review_12
        
        
  
-6. today's tip (PrimaryKey and Index)
+7. today's tip (PrimaryKey and Index)
 
     主鍵與索引鍵
 
