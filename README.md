@@ -1,7 +1,7 @@
 # Android_Review_11
 DB model, Room and Repo for App
 
-Repository act as a mediators for different data souces from following data soreces such as (1) + (2)
+Repository acts as a mediators for different data souces from following data soreces such as (1) + (2)
 
   (1) Room, a persistent data models
   
