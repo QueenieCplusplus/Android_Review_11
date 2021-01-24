@@ -35,9 +35,9 @@ Repository acts as a mediators for different data souces from following data sor
 2. app's architecture =>
 
 
-   app - db (data src fm Room)
-       - domain (data src fm web server)
-       - repo (mediators for diff data src)
-       - viewmodels (see Android_Review_12)
+       app - db (data src fm Room)
+           - domain (data src fm web server)
+           - repo (mediators for diff data src)
+           - viewmodels (see Android_Review_12)
 
 to be continued....
