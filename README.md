@@ -199,8 +199,10 @@ Room helps user to persist info even they closed app for several days.
 
    https://blog.niclin.tw/2018/06/09/sql-基本觀念-primary-key-/-index-/-unique-差別/
    
-8. android's tip (MVC)
+8. android's tip (MVC in Kotlin)
 
     https://developer.android.com/jetpack/guide
+
+9. android's tip (MVC in Java)
 
     https://github.com/android/architecture-components-samples/tree/main/BasicSample/app/src/main/java/com/example/android/persistence (sample code)
