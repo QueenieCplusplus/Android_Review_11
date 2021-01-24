@@ -36,7 +36,7 @@ Repository acts as a mediators for different data souces from following data sor
 
 
        app - db (data src fm Room)
-           - domain (data src fm web server)
+           - domain (see Android_Review_10, data src fm web server)
            - repo (mediators for diff data src)
            - viewmodels (see Android_Review_12, to resolve the problems from I/O threads and UI main thread using coroutines instead of threads)
            
