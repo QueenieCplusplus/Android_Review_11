@@ -5,7 +5,8 @@ Repository acts as a mediators for different data souces from following data sor
 
 Room helps user to persist info even they closed app for several days.
 
-    (1) Retrofit, a web service. see Android_Review_10      (2) Room, a persistent data models saved in Caches of the app.
+    (1) 遠端資料處理                                  (2) 手機系統內部緩存
+    Retrofit, a web service. see Android_Review_10    Room, a persistent data models saved in Caches of the app.
     
     
             List<Video>  ----    List<DBVideo>   ---  Dao   ----   VideosDB  ---  Room
