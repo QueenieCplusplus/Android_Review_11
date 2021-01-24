@@ -5,10 +5,17 @@ Repository acts as a mediators for different data souces from following data sor
 
     (1) Retrofit, a web service. see Android_Review_10      (2) Room, a persistent data models
     
+                          List<Video>        ---------------------      List<DBVideo>
+    
+    
+                                    List<DBVideo>.asDomainModel(): List<Video>
+    
   
                              |                                          |
                              |                                          |
                              V                                          V
+                             
+                             
   
                                   (3) Repository, Caches of the app. 
                                   
