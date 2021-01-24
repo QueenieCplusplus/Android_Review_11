@@ -125,7 +125,26 @@ Repository acts as a mediators for different data souces from following data sor
        
        )
        
-       fun
+       
+       // Mapper from DBVideo to Domain Entity
+       fun List<DBVideo>.asDomainModel(): List<Video> {
+           
+           return map{
+           
+                Video(
+                  
+                     title = it.title
+                      des = it.des
+                      url = it.url
+                      updated = it.updated
+                      thumbnail = it.thumbnail
+                
+                )
+           
+           }
+       
+       
+       }
        
        
        
