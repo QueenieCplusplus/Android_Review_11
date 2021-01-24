@@ -41,6 +41,29 @@ Repository acts as a mediators for different data souces from following data sor
            - viewmodels (see Android_Review_12, to resolve the problems from I/O threads and UI main thread using coroutines instead of threads)
            
  
-3. 
+3. for data sorce from Web Server, see Android_Review_10.
+
+        // TODO for app/..../katesvideoapp/network/
+        // after Android_Review_11 is done.
+        // httpResult - dbObj converter
+
+        /* fun methodCalled(): List<Video> {
+
+              return videos.map {
+
+                  Video(
+
+                      title = it.title
+                      des = it.des
+                      url = it.url
+                      updated = it.updated
+                      thumbnail = it.thumbnail
+
+                  )
+
+              }
+
+
+        }*/
 
 to be continued....
