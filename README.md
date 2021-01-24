@@ -15,6 +15,21 @@ Repository acts as a mediators for different data souces from following data sor
   ![](https://raw.githubusercontent.com/QueenieCplusplus/Android_Review_11/main/Architecture.png)
   
   
-  
+ 1. add dependencies using implementation method called in path app/build.gradle
+
+        dependencies {
+
+            // architecture components
+            def lifecycle_version = "2.2.0"
+            implementation "android.lifecycle:lifecycle-extensions:$lifecycle_version"
+            implementation "android.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+            
+            // Room dependencies
+            def room_version = "2.2.0"
+            implementation "androidx.room-runtime:$room_version"
+            kapt "androidx.room:room-compiler:$room_version"
+
+        }
+
 
 to be continued....
