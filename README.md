@@ -6,7 +6,7 @@ Repository acts as a mediators for different data souces from following data sor
     (1) Retrofit, a web service. see Android_Review_10      (2) Room, a persistent data models
     
     
-                          List<Video>  ----    List<DBVideo>   ----  VideosDB --- Room
+            List<Video>  ----    List<DBVideo>   ---  Dao   ----   VideosDB  ---  Room
     
     
                                List<DBVideo>.asDomainModel(): List<Video>
