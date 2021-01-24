@@ -172,7 +172,9 @@ Room helps user to persist info even they closed app for several days.
        }
        
 
-6. to create a persistent DB model using Room. R/W from DBVideo to VideosDB.
+6.
+  to create a Dao, also known as Data Access Object between DBVideo and VideosDB.
+  to create a persistent DB model using Room. R/W from DBVideo to VideosDB.
 
        // TODO
 
