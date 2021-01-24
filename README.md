@@ -203,4 +203,4 @@ Room helps user to persist info even they closed app for several days.
 
     https://developer.android.com/jetpack/guide
 
-
+    https://github.com/android/architecture-components-samples/tree/main/BasicSample/app/src/main/java/com/example/android/persistence (sample code)
