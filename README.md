@@ -53,7 +53,34 @@ Repository acts as a mediators for different data souces from following data sor
            - viewmodels (see Android_Review_12, to resolve the problems from I/O threads and UI main thread using coroutines instead of threads)
            
  
-3. for data sorce from Web Server, see Android_Review_10.
+
+3. create a data model for data sorce from Web Server, see (4).
+
+         // go to app/src/main/java/..../katesvideoapp/domain/Models.kt
+         
+         package com.example.android.katesvideoapp.domain
+         
+         [customed truncate util module for byte streaming live data]
+         import com.example.android.katesvideoapp.util.Truncator
+         
+         //data class Video(param){body}
+         
+         data class Video(
+            val title: String,
+            val des: String,
+            val url: String,
+            val updated: String,
+            val thumbnail: String
+         
+         ){
+         
+           get() = des.Truncator(200)
+           val shortDes: String
+         
+         }
+
+
+4. for data sorce from Web Server, see Android_Review_10.
 
         // app/..../katesvideoapp/network/DataConverter.kt
         // httpResult - dbObj converter
@@ -76,5 +103,8 @@ Repository acts as a mediators for different data souces from following data sor
 
 
         }*/
+        
+ 
+ 
 
 to be continued....
