@@ -3,6 +3,8 @@ DB model, Room and Repo for App
 
 Repository acts as a mediators for different data souces from following data soreces such as (1) + (2)
 
+Room helps user to persist info even they closed app for several days.
+
     (1) Retrofit, a web service. see Android_Review_10      (2) Room, a persistent data models
     
     
