@@ -31,6 +31,12 @@ Room helps user to persist info even they closed app for several days.
                                   
                                                   |
                                                   |
+                                                  
+                                                  
+                                      LiveData acts as an Event Observer
+                                                  
+                                                  
+                                                  
                                                   |
                                                   V
                           
