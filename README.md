@@ -12,7 +12,7 @@ Repository act as a mediators for different data souces from following data sore
   (4) ViewModel, to bind (3) with UI element. M + V = C
   
   
-  ![](https://developer.android.com/jetpack/guide)
+  ![](https://raw.githubusercontent.com/QueenieCplusplus/Android_Review_11/main/Architecture.png)
   
   
   
