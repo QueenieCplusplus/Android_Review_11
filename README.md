@@ -21,7 +21,9 @@ Room helps user to persist info even they closed app for several days.
                              
                              
   
-                                 (3) Repository, a Mediator for data src from remote or local.
+                                 (3) 暫存器，扮演記憶體使用佔用資料的協調者角色
+                                     Repository, a Mediator for data src from remote or local.
+                                     If this data is stale, the app's repository module starts updating the data in the background.
                                   
                                                   |
                                                   |
