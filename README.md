@@ -43,8 +43,7 @@ Repository acts as a mediators for different data souces from following data sor
  
 3. for data sorce from Web Server, see Android_Review_10.
 
-        // TODO for app/..../katesvideoapp/network/
-        // after Android_Review_11 is done.
+        // app/..../katesvideoapp/network/DataConverter.kt
         // httpResult - dbObj converter
 
         /* fun methodCalled(): List<Video> {
