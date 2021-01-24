@@ -5,7 +5,7 @@ Repository act as a mediators for different data souces from following data sore
 
   (1) Room, a persistent data models
   
-  (2) Retrofit, a web service.
+  (2) Retrofit, a web service. see Android_Review_10
   
   (3) Repository, Caches of the app. 
   
