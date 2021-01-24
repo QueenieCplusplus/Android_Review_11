@@ -104,7 +104,34 @@ Repository acts as a mediators for different data souces from following data sor
 
         }*/
         
+
+5. create a data model for persistent data sorce using Room Module. It's responsible for R/W from DB.
+
+       // go to app/src/main/java/..../katesvideoapp/db/DBEntities.kt 資料實體模組
+       
+       import androidx.room.Entity
+       import androidx.room.PrimaryKey
+       import (3) module 
+       
+       @Entity
+       data class DBVideo constructor(
+       
+            @PrimaryKey
+            val title: String,
+            val des: String,
+            val url: String,
+            val updated: String,
+            val thumbnail: String
+       
+       )
+       
+       
+       
  
- 
+6. today's tip (PrimaryKey and Index)
+
+    主鍵與索引鍵
+
+   https://blog.niclin.tw/2018/06/09/sql-基本觀念-primary-key-/-index-/-unique-差別/
 
 to be continued....
