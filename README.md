@@ -1,5 +1,5 @@
 # Android_Review_11
-DB model, Room and Repo for App
+converter for DB model - Room as cache in App.
 
 系統中模組之間的關係僅能為 V-C-M 。
 
@@ -72,8 +72,11 @@ Room helps user to persist info even they closed app for several days.
 2. app's architecture =>
 
 
-       app - db (data src fm Room)
-           - domain (see Android_Review_10, data src fm web server)
+       app 
+           - network obj (data src fm Remote)
+           - domain (related with network obj)
+           - db (data src fm Room, to convert data from db to room-cache)
+           
            - repo (mediators for diff data src)
            - viewmodels (see Android_Review_12, to resolve the problems from I/O threads and UI main thread using coroutines instead of threads)
            
@@ -104,33 +107,9 @@ Room helps user to persist info even they closed app for several days.
          
          }
 
-
-4. for data sorce from Web Server, see Android_Review_10.
-
-        // app/..../katesvideoapp/network/DataConverter.kt
-        // httpResult - dbObj converter
-
-        /* fun methodCalled(): List<Video> {
-
-              return videos.map {
-
-                  Video(
-
-                      title = it.title
-                      des = it.des
-                      url = it.url
-                      updated = it.updated
-                      thumbnail = it.thumbnail
-
-                  )
-
-              }
-
-
-        }*/
         
 
-5. create a data model for persistent data sorce using Room Module. It's responsible for R/W from DB.
+4. create a data model for persistent data sorce using Room Module. It's responsible for R/W from DB.
 
        // go to app/src/main/java/..../katesvideoapp/db/DBEntities.kt 資料實體模組
        
@@ -175,37 +154,27 @@ Room helps user to persist info even they closed app for several days.
        }
        
 
-6.
+5.
   to create a Dao, also known as Data Access Object between DBVideo and VideosDB.
   to create a persistent DB model using Room. R/W from DBVideo to VideosDB.
 
-       // TODO
-
        // go to app/src/main/java/..../katesvideoapp/db/Room.kt 持續性資料庫
-       
-       package com.example.android.devbyteviewer.db
-       
-       import androidx.room.*
-       
-       [modules matters with Livedata]
-       
-       [context related module]
        
        // TODO
        // see Android_Review_12
        
        
  
-7. today's tip (PrimaryKey and Index)
+6. today's tip (PrimaryKey and Index)
 
     主鍵與索引鍵
 
    https://blog.niclin.tw/2018/06/09/sql-基本觀念-primary-key-/-index-/-unique-差別/
    
-8. android's tip (MVC in Kotlin)
+7. android's tip (MVC in Kotlin)
 
     https://developer.android.com/jetpack/guide
 
-9. android's tip (MVC in Java)
+8. android's tip (MVC in Java)
 
     https://github.com/android/architecture-components-samples/tree/main/BasicSample/app/src/main/java/com/example/android/persistence (sample code)
