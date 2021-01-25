@@ -151,7 +151,8 @@ Room helps user to persist info even they closed app for several days.
        )
        
        
-       // Mapper from DBVideo to Domain Entity
+       // Public Fun
+       // Mapper from DBVideo to DomainModel called Video
        fun List<DBVideo>.asDomainModel(): List<Video> {
            
            return map{
