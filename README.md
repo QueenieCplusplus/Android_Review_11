@@ -13,10 +13,12 @@ Room helps user to persist info even they closed app for several days.
     Retrofit, a web service. see Android_Review_10    Room, a persistent data models saved in Caches of the app.
     
     
-            List<Video>  ----    List<DBVideo>   ---  Dao   ----   VideosDB  ---  Room
+                        Domain                 DB                             Cache
+    JSON obj -----     List<Video>  ----    List<DBVideo>   ---  Dao   ----   VideosDB  ---  Room
     
     
-                               List<DBVideo>.asDomainModel(): List<Video>
+                                           
+                                           List<Video>
     
   
                              |                                          |
